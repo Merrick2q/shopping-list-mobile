@@ -131,8 +131,8 @@ class _ShopFormPageState extends State<ShopFormPage> {
                                       children: [
                                         Text('Nama: $_name'),
                                         // TODO: Munculkan value-value lainnya
+                                        Text('Harga: Rp $_price'),
                                         Text('Deskripsi: $_description'),
-                                        Text('Harga: $_price'),
                                       ],
                                     ),
                                   ),
@@ -147,8 +147,8 @@ class _ShopFormPageState extends State<ShopFormPage> {
                                 );
                               },
                             );
-                          }
                           _formKey.currentState!.reset();
+                          }
                         },
                         child: const Text(
                           "Save",
